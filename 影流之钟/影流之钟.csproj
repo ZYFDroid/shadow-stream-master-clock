@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D00EA85F-DAB5-46B2-8B52-4FA0FBEB1702}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>影流之钟</RootNamespace>
+    <AssemblyName>影流之钟</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GdiSystem.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgclock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frames\frame001.png" />
+    <EmbeddedResource Include="frames\frame002.png" />
+    <EmbeddedResource Include="frames\frame003.png" />
+    <EmbeddedResource Include="frames\frame004.png" />
+    <EmbeddedResource Include="frames\frame005.png" />
+    <EmbeddedResource Include="frames\frame006.png" />
+    <EmbeddedResource Include="frames\frame007.png" />
+    <EmbeddedResource Include="frames\frame008.png" />
+    <EmbeddedResource Include="frames\frame009.png" />
+    <EmbeddedResource Include="frames\frame010.png" />
+    <EmbeddedResource Include="frames\frame011.png" />
+    <EmbeddedResource Include="frames\frame012.png" />
+    <EmbeddedResource Include="frames\frame013.png" />
+    <EmbeddedResource Include="frames\frame014.png" />
+    <EmbeddedResource Include="frames\frame015.png" />
+    <EmbeddedResource Include="frames\frame016.png" />
+    <EmbeddedResource Include="frames\frame017.png" />
+    <EmbeddedResource Include="frames\frame018.png" />
+    <EmbeddedResource Include="frames\frame019.png" />
+    <EmbeddedResource Include="frames\frame020.png" />
+    <EmbeddedResource Include="frames\frame021.png" />
+    <EmbeddedResource Include="frames\frame022.png" />
+    <EmbeddedResource Include="frames\frame023.png" />
+    <EmbeddedResource Include="frames\frame024.png" />
+    <EmbeddedResource Include="frames\frame025.png" />
+    <EmbeddedResource Include="frames\frame026.png" />
+    <EmbeddedResource Include="frames\frame027.png" />
+    <EmbeddedResource Include="frames\frame028.png" />
+    <EmbeddedResource Include="frames\frame029.png" />
+    <EmbeddedResource Include="frames\frame030.png" />
+    <EmbeddedResource Include="frames\frame031.png" />
+    <EmbeddedResource Include="frames\frame032.png" />
+    <EmbeddedResource Include="frames\frame033.png" />
+    <EmbeddedResource Include="frames\frame034.png" />
+    <EmbeddedResource Include="frames\frame035.png" />
+    <EmbeddedResource Include="frames\frame036.png" />
+    <EmbeddedResource Include="frames\frame037.png" />
+    <EmbeddedResource Include="frames\frame038.png" />
+    <EmbeddedResource Include="frames\frame039.png" />
+    <EmbeddedResource Include="frames\frame040.png" />
+    <EmbeddedResource Include="frames\frame041.png" />
+    <EmbeddedResource Include="frames\frame042.png" />
+    <EmbeddedResource Include="frames\frame043.png" />
+    <EmbeddedResource Include="frames\frame044.png" />
+    <EmbeddedResource Include="frames\frame045.png" />
+    <EmbeddedResource Include="frames\frame046.png" />
+    <EmbeddedResource Include="frames\frame047.png" />
+    <EmbeddedResource Include="frames\frame048.png" />
+    <EmbeddedResource Include="frames\frame049.png" />
+    <EmbeddedResource Include="frames\frame050.png" />
+    <EmbeddedResource Include="frames\frame051.png" />
+    <EmbeddedResource Include="frames\frame052.png" />
+    <EmbeddedResource Include="frames\frame053.png" />
+    <EmbeddedResource Include="frames\frame054.png" />
+    <EmbeddedResource Include="frames\frame055.png" />
+    <EmbeddedResource Include="frames\frame056.png" />
+    <EmbeddedResource Include="frames\frame057.png" />
+    <EmbeddedResource Include="frames\frame058.png" />
+    <EmbeddedResource Include="frames\frame059.png" />
+    <EmbeddedResource Include="frames\frame060.png" />
+    <EmbeddedResource Include="frames\frame061.png" />
+    <EmbeddedResource Include="frames\frame062.png" />
+    <EmbeddedResource Include="frames\frame063.png" />
+    <EmbeddedResource Include="frames\frame064.png" />
+    <EmbeddedResource Include="frames\frame065.png" />
+    <EmbeddedResource Include="frames\frame066.png" />
+    <EmbeddedResource Include="frames\frame067.png" />
+    <EmbeddedResource Include="frames\frame068.png" />
+    <EmbeddedResource Include="frames\frame069.png" />
+    <EmbeddedResource Include="frames\frame070.png" />
+    <EmbeddedResource Include="frames\frame071.png" />
+    <EmbeddedResource Include="frames\frame072.png" />
+    <EmbeddedResource Include="frames\frame073.png" />
+    <EmbeddedResource Include="frames\frame074.png" />
+    <EmbeddedResource Include="frames\frame075.png" />
+    <EmbeddedResource Include="frames\frame076.png" />
+    <EmbeddedResource Include="frames\frame077.png" />
+    <EmbeddedResource Include="frames\frame078.png" />
+    <EmbeddedResource Include="frames\frame079.png" />
+    <EmbeddedResource Include="frames\frame080.png" />
+    <EmbeddedResource Include="frames\frame081.png" />
+    <EmbeddedResource Include="frames\frame082.png" />
+    <EmbeddedResource Include="frames\frame083.png" />
+    <EmbeddedResource Include="frames\frame084.png" />
+    <EmbeddedResource Include="frames\frame085.png" />
+    <EmbeddedResource Include="frames\frame086.png" />
+    <EmbeddedResource Include="frames\frame087.png" />
+    <EmbeddedResource Include="frames\frame088.png" />
+    <EmbeddedResource Include="frames\frame089.png" />
+    <EmbeddedResource Include="frames\frame090.png" />
+    <EmbeddedResource Include="frames\frame091.png" />
+    <EmbeddedResource Include="frames\frame092.png" />
+    <EmbeddedResource Include="frames\frame093.png" />
+    <EmbeddedResource Include="frames\frame094.png" />
+    <EmbeddedResource Include="frames\frame095.png" />
+    <EmbeddedResource Include="frames\frame096.png" />
+    <EmbeddedResource Include="frames\frame097.png" />
+    <EmbeddedResource Include="frames\frame098.png" />
+    <EmbeddedResource Include="frames\frame099.png" />
+    <EmbeddedResource Include="frames\frame100.png" />
+    <EmbeddedResource Include="frames\frame101.png" />
+    <EmbeddedResource Include="frames\frame102.png" />
+    <EmbeddedResource Include="frames\frame103.png" />
+    <EmbeddedResource Include="frames\frame104.png" />
+    <EmbeddedResource Include="frames\frame105.png" />
+    <EmbeddedResource Include="frames\frame106.png" />
+    <EmbeddedResource Include="frames\frame107.png" />
+    <EmbeddedResource Include="frames\frame108.png" />
+    <EmbeddedResource Include="frames\frame109.png" />
+    <EmbeddedResource Include="frames\frame110.png" />
+    <EmbeddedResource Include="frames\frame111.png" />
+    <EmbeddedResource Include="frames\frame112.png" />
+    <EmbeddedResource Include="frames\frame113.png" />
+    <EmbeddedResource Include="frames\frame114.png" />
+    <EmbeddedResource Include="frames\frame115.png" />
+    <EmbeddedResource Include="frames\frame116.png" />
+    <EmbeddedResource Include="frames\frame117.png" />
+    <EmbeddedResource Include="frames\frame118.png" />
+    <EmbeddedResource Include="frames\frame119.png" />
+    <EmbeddedResource Include="frames\frame120.png" />
+    <EmbeddedResource Include="frames\frame121.png" />
+    <EmbeddedResource Include="frames\frame122.png" />
+    <EmbeddedResource Include="frames\frame123.png" />
+    <EmbeddedResource Include="frames\frame124.png" />
+    <EmbeddedResource Include="frames\frame125.png" />
+    <EmbeddedResource Include="frames\frame126.png" />
+    <EmbeddedResource Include="frames\frame127.png" />
+    <EmbeddedResource Include="frames\frame128.png" />
+    <EmbeddedResource Include="frames\frame129.png" />
+    <EmbeddedResource Include="frames\frame130.png" />
+    <EmbeddedResource Include="frames\frame131.png" />
+    <EmbeddedResource Include="frames\frame132.png" />
+    <EmbeddedResource Include="frames\frame133.png" />
+    <EmbeddedResource Include="frames\frame134.png" />
+    <EmbeddedResource Include="frames\frame135.png" />
+    <EmbeddedResource Include="frames\frame136.png" />
+    <EmbeddedResource Include="frames\frame137.png" />
+    <EmbeddedResource Include="frames\frame138.png" />
+    <EmbeddedResource Include="frames\frame139.png" />
+    <EmbeddedResource Include="frames\frame140.png" />
+    <EmbeddedResource Include="frames\frame141.png" />
+    <EmbeddedResource Include="frames\frame142.png" />
+    <EmbeddedResource Include="frames\frame143.png" />
+    <EmbeddedResource Include="frames\frame144.png" />
+    <EmbeddedResource Include="frames\frame145.png" />
+    <EmbeddedResource Include="frames\frame146.png" />
+    <EmbeddedResource Include="frames\frame147.png" />
+    <EmbeddedResource Include="frames\frame148.png" />
+    <EmbeddedResource Include="frames\frame149.png" />
+    <EmbeddedResource Include="frames\frame150.png" />
+    <EmbeddedResource Include="frames\frame151.png" />
+    <EmbeddedResource Include="frames\frame152.png" />
+    <EmbeddedResource Include="frames\frame153.png" />
+    <EmbeddedResource Include="frames\frame154.png" />
+    <EmbeddedResource Include="frames\frame155.png" />
+    <EmbeddedResource Include="frames\frame156.png" />
+    <EmbeddedResource Include="frames\frame157.png" />
+    <EmbeddedResource Include="frames\frame158.png" />
+    <EmbeddedResource Include="frames\frame159.png" />
+    <EmbeddedResource Include="frames\frame160.png" />
+    <EmbeddedResource Include="frames\frame161.png" />
+    <EmbeddedResource Include="frames\frame162.png" />
+    <EmbeddedResource Include="frames\frame163.png" />
+    <EmbeddedResource Include="frames\frame164.png" />
+    <EmbeddedResource Include="frames\frame165.png" />
+    <EmbeddedResource Include="frames\frame166.png" />
+    <EmbeddedResource Include="frames\frame167.png" />
+    <EmbeddedResource Include="frames\frame168.png" />
+    <EmbeddedResource Include="frames\frame169.png" />
+    <EmbeddedResource Include="frames\frame170.png" />
+    <EmbeddedResource Include="frames\frame171.png" />
+    <EmbeddedResource Include="frames\frame172.png" />
+    <EmbeddedResource Include="frames\frame173.png" />
+    <EmbeddedResource Include="frames\frame174.png" />
+    <EmbeddedResource Include="frames\frame175.png" />
+    <EmbeddedResource Include="frames\frame176.png" />
+    <EmbeddedResource Include="frames\frame177.png" />
+    <EmbeddedResource Include="frames\frame178.png" />
+    <EmbeddedResource Include="frames\frame179.png" />
+    <EmbeddedResource Include="frames\frame180.png" />
+    <EmbeddedResource Include="frames\frame181.png" />
+    <EmbeddedResource Include="frames\frame182.png" />
+    <EmbeddedResource Include="frames\frame183.png" />
+    <EmbeddedResource Include="frames\frame184.png" />
+    <EmbeddedResource Include="frames\frame185.png" />
+    <EmbeddedResource Include="frames\frame186.png" />
+    <EmbeddedResource Include="frames\frame187.png" />
+    <EmbeddedResource Include="frames\frame188.png" />
+    <EmbeddedResource Include="frames\frame189.png" />
+    <EmbeddedResource Include="frames\frame190.png" />
+    <EmbeddedResource Include="frames\frame191.png" />
+    <EmbeddedResource Include="frames\frame192.png" />
+    <EmbeddedResource Include="frames\frame193.png" />
+    <EmbeddedResource Include="frames\frame194.png" />
+    <EmbeddedResource Include="frames\frame195.png" />
+    <EmbeddedResource Include="frames\frame196.png" />
+    <EmbeddedResource Include="frames\frame197.png" />
+    <EmbeddedResource Include="frames\frame198.png" />
+    <EmbeddedResource Include="frames\frame199.png" />
+    <EmbeddedResource Include="frames\frame200.png" />
+    <EmbeddedResource Include="frames\frame201.png" />
+    <EmbeddedResource Include="frames\frame202.png" />
+    <EmbeddedResource Include="frames\frame203.png" />
+    <EmbeddedResource Include="frames\frame204.png" />
+    <EmbeddedResource Include="frames\frame205.png" />
+    <EmbeddedResource Include="frames\frame206.png" />
+    <EmbeddedResource Include="frames\frame207.png" />
+    <EmbeddedResource Include="frames\frame208.png" />
+    <EmbeddedResource Include="frames\frame209.png" />
+    <EmbeddedResource Include="frames\frame210.png" />
+    <EmbeddedResource Include="frames\frame211.png" />
+    <EmbeddedResource Include="frames\frame212.png" />
+    <EmbeddedResource Include="frames\frame213.png" />
+    <EmbeddedResource Include="frames\frame214.png" />
+    <EmbeddedResource Include="frames\frame215.png" />
+    <EmbeddedResource Include="frames\frame216.png" />
+    <EmbeddedResource Include="frames\frame217.png" />
+    <EmbeddedResource Include="frames\frame218.png" />
+    <EmbeddedResource Include="frames\frame219.png" />
+    <EmbeddedResource Include="frames\frame220.png" />
+    <EmbeddedResource Include="frames\frame221.png" />
+    <EmbeddedResource Include="frames\frame222.png" />
+    <EmbeddedResource Include="frames\frame223.png" />
+    <EmbeddedResource Include="frames\frame224.png" />
+    <EmbeddedResource Include="frames\frame225.png" />
+    <EmbeddedResource Include="frames\frame226.png" />
+    <EmbeddedResource Include="frames\frame227.png" />
+    <EmbeddedResource Include="frames\frame228.png" />
+    <EmbeddedResource Include="frames\frame229.png" />
+    <EmbeddedResource Include="frames\frame230.png" />
+    <EmbeddedResource Include="frames\frame231.png" />
+    <EmbeddedResource Include="frames\frame232.png" />
+    <EmbeddedResource Include="frames\frame233.png" />
+    <EmbeddedResource Include="frames\frame234.png" />
+    <EmbeddedResource Include="frames\frame235.png" />
+    <EmbeddedResource Include="frames\frame236.png" />
+    <EmbeddedResource Include="frames\frame237.png" />
+    <EmbeddedResource Include="frames\frame238.png" />
+    <EmbeddedResource Include="frames\frame239.png" />
+    <EmbeddedResource Include="frames\frame240.png" />
+    <EmbeddedResource Include="frames\frame241.png" />
+    <EmbeddedResource Include="frames\frame242.png" />
+    <EmbeddedResource Include="frames\frame243.png" />
+    <EmbeddedResource Include="frames\frame244.png" />
+    <EmbeddedResource Include="frames\frame245.png" />
+    <EmbeddedResource Include="frames\frame246.png" />
+    <EmbeddedResource Include="frames\frame247.png" />
+    <EmbeddedResource Include="frames\frame248.png" />
+    <EmbeddedResource Include="frames\frame249.png" />
+    <EmbeddedResource Include="frames\frame250.png" />
+    <EmbeddedResource Include="frames\frame251.png" />
+    <EmbeddedResource Include="frames\frame252.png" />
+    <EmbeddedResource Include="frames\frame253.png" />
+    <EmbeddedResource Include="frames\frame254.png" />
+    <EmbeddedResource Include="frames\frame255.png" />
+    <EmbeddedResource Include="frames\frame256.png" />
+    <EmbeddedResource Include="frames\frame257.png" />
+    <EmbeddedResource Include="frames\frame258.png" />
+    <EmbeddedResource Include="frames\frame259.png" />
+    <EmbeddedResource Include="frames\frame260.png" />
+    <EmbeddedResource Include="frames\frame261.png" />
+    <EmbeddedResource Include="frames\frame262.png" />
+    <EmbeddedResource Include="frames\frame263.png" />
+    <EmbeddedResource Include="frames\frame264.png" />
+    <EmbeddedResource Include="frames\frame265.png" />
+    <EmbeddedResource Include="frames\frame266.png" />
+    <EmbeddedResource Include="frames\frame267.png" />
+    <EmbeddedResource Include="frames\frame268.png" />
+    <EmbeddedResource Include="frames\frame269.png" />
+    <EmbeddedResource Include="frames\frame270.png" />
+    <EmbeddedResource Include="frames\frame271.png" />
+    <EmbeddedResource Include="frames\frame272.png" />
+    <EmbeddedResource Include="frames\frame273.png" />
+    <EmbeddedResource Include="frames\frame274.png" />
+    <EmbeddedResource Include="frames\frame275.png" />
+    <EmbeddedResource Include="frames\frame276.png" />
+    <EmbeddedResource Include="frames\frame277.png" />
+    <EmbeddedResource Include="frames\frame278.png" />
+    <EmbeddedResource Include="frames\frame279.png" />
+    <EmbeddedResource Include="frames\frame280.png" />
+    <EmbeddedResource Include="frames\frame281.png" />
+    <EmbeddedResource Include="frames\frame282.png" />
+    <EmbeddedResource Include="frames\frame283.png" />
+    <EmbeddedResource Include="frames\frame284.png" />
+    <EmbeddedResource Include="frames\frame285.png" />
+    <EmbeddedResource Include="frames\frame286.png" />
+    <EmbeddedResource Include="frames\frame287.png" />
+    <EmbeddedResource Include="frames\frame288.png" />
+    <EmbeddedResource Include="frames\frame289.png" />
+    <EmbeddedResource Include="frames\frame290.png" />
+    <EmbeddedResource Include="frames\frame291.png" />
+    <EmbeddedResource Include="frames\frame292.png" />
+    <EmbeddedResource Include="frames\frame293.png" />
+    <EmbeddedResource Include="frames\frame294.png" />
+    <EmbeddedResource Include="frames\frame295.png" />
+    <EmbeddedResource Include="frames\frame296.png" />
+    <EmbeddedResource Include="frames\frame297.png" />
+    <EmbeddedResource Include="frames\frame298.png" />
+    <EmbeddedResource Include="frames\frame299.png" />
+    <EmbeddedResource Include="frames\frame300.png" />
+    <EmbeddedResource Include="frames\frame301.png" />
+    <EmbeddedResource Include="frames\frame302.png" />
+    <EmbeddedResource Include="frames\frame303.png" />
+    <EmbeddedResource Include="frames\frame304.png" />
+    <EmbeddedResource Include="frames\frame305.png" />
+    <EmbeddedResource Include="frames\frame306.png" />
+    <EmbeddedResource Include="frames\frame307.png" />
+    <EmbeddedResource Include="frames\frame308.png" />
+    <EmbeddedResource Include="frames\frame309.png" />
+    <EmbeddedResource Include="frames\frame310.png" />
+    <EmbeddedResource Include="frames\frame311.png" />
+    <EmbeddedResource Include="frames\frame312.png" />
+    <EmbeddedResource Include="frames\frame313.png" />
+    <EmbeddedResource Include="frames\frame314.png" />
+    <EmbeddedResource Include="frames\frame315.png" />
+    <EmbeddedResource Include="frames\frame316.png" />
+    <EmbeddedResource Include="frames\frame317.png" />
+    <EmbeddedResource Include="frames\frame318.png" />
+    <EmbeddedResource Include="frames\frame319.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio0.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audio1.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
